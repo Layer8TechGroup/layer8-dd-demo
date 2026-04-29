@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is the Layer8 DD Assessment?</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+         font-size:14px;line-height:1.7;color:#1F2937;background:#F3F4F6;margin:0;padding:0;}
+    .page{max-width:1000px;margin:0 auto;background:white;}
+
+    /* ── Header ── */
+    .header-bar{background:#1E2761;color:white;padding:20px 32px;display:flex;
+                justify-content:space-between;align-items:center;
+                -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .brand{font-size:20px;font-weight:700;display:block;}
+    .sub{font-size:13px;opacity:.8;margin-top:2px;display:block;}
+    nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .nav-link{color:rgba(255,255,255,0.75);font-size:12px;text-decoration:none;
+              padding:5px 11px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;}
+    .nav-link.active{background:rgba(255,255,255,0.15);color:white;
+                     border-color:rgba(255,255,255,0.6);}
+    .nav-ext{color:#028090 !important;border-color:rgba(2,128,144,.5) !important;}
+
+    /* ── Layout ── */
+    .content{padding:0 0 48px;}
+    section{padding:36px 40px;}
+    section+section{border-top:1px solid #F0F0F0;}
+    h2{font-size:18px;font-weight:700;color:#1E2761;margin:0 0 6px;}
+    .section-sub{font-size:14px;color:#028090;margin:0 0 20px;font-weight:500;}
+    p{margin:0 0 12px;color:#374151;}
+
+    /* ── Hero ── */
+    .hero{background:#1E2761;color:white;padding:52px 40px;
+          -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+                  color:#C9A84C;margin:0 0 12px;}
+    .hero-title{font-size:32px;font-weight:800;line-height:1.2;margin:0 0 12px;
+                font-family:Georgia,'Times New Roman',serif;}
+    .hero-subtitle{font-size:16px;color:#94A3B8;margin:0 0 20px;font-weight:500;}
+    .hero-body{font-size:14px;color:#CBD5E1;line-height:1.8;max-width:680px;margin:0;}
+
+    /* ── Stat cards ── */
+    .stat-row{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0 0;}
+    .stat-card{flex:1;min-width:200px;background:#F8FAFC;border:1px solid #E5E7EB;
+               border-radius:6px;padding:20px 18px;
+               -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .stat-num{font-size:36px;font-weight:800;color:#1E2761;line-height:1;}
+    .stat-label{font-size:12px;font-weight:600;color:#374151;margin:6px 0 4px;}
+    .stat-desc{font-size:12px;color:#6B7280;line-height:1.5;}
+
+    /* ── Domain grid ── */
+    .domain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px;}
+    @media(max-width:700px){.domain-grid{grid-template-columns:repeat(2,1fr);}}
+    .domain-card{border-radius:6px;padding:14px 14px 12px;
+                 border:1px solid #E5E7EB;
+                 -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .domain-icon{font-size:18px;margin-bottom:6px;}
+    .domain-name{font-size:12px;font-weight:700;color:#1E2761;margin-bottom:5px;}
+    .domain-desc{font-size:11px;color:#6B7280;line-height:1.5;}
+
+    /* ── Persona cards ── */
+    .persona-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px;}
+    @media(max-width:700px){.persona-row{grid-template-columns:1fr;}}
+    .persona-card{border:2px solid #E5E7EB;border-radius:8px;overflow:hidden;}
+    .persona-hdr{padding:14px 16px;
+                 -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .persona-icon{font-size:24px;margin-bottom:6px;}
+    .persona-title{font-size:13px;font-weight:700;margin-bottom:3px;}
+    .persona-tagline{font-size:11px;opacity:.8;}
+    .persona-body{padding:14px 16px;font-size:12px;color:#374151;line-height:1.7;}
+    .top-domains{margin-top:8px;font-size:11px;color:#028090;font-weight:600;}
+
+    /* ── Process steps ── */
+    .steps{display:flex;flex-direction:column;gap:0;margin-top:20px;}
+    .step{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid #F0F0F0;}
+    .step:last-child{border-bottom:none;}
+    .step-num{font-size:36px;font-weight:800;color:#E5E7EB;line-height:1;
+              flex-shrink:0;width:54px;text-align:right;font-family:Georgia,serif;}
+    .step-body{flex:1;}
+    .step-title{font-size:15px;font-weight:700;color:#1E2761;margin:0 0 6px;}
+    .step-desc{font-size:13px;color:#374151;line-height:1.7;margin:0 0 6px;}
+    .step-time{font-size:11px;color:#028090;font-weight:600;}
+
+    /* ── Feature 2×2 ── */
+    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+    @media(max-width:600px){.feature-grid{grid-template-columns:1fr;}}
+    .feature-card{border:1px solid #E5E7EB;border-radius:6px;padding:18px;}
+    .feature-title{font-size:13px;font-weight:700;color:#1E2761;margin-bottom:8px;
+                   display:flex;align-items:center;gap:8px;}
+    .feature-icon{font-size:16px;}
+    .feature-desc{font-size:12px;color:#4B5563;line-height:1.7;}
+
+    /* ── Tier cards ── */
+    .tier-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px;}
+    @media(max-width:700px){.tier-row{grid-template-columns:1fr;}}
+    .tier-card{border:1px solid #E5E7EB;border-radius:8px;overflow:hidden;
+               display:flex;flex-direction:column;}
+    .tier-hdr{padding:12px 16px;
+              -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .tier-badge{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+                padding:2px 8px;border-radius:10px;display:inline-block;margin-bottom:8px;}
+    .tier-name{font-size:13px;font-weight:700;margin-bottom:2px;}
+    .tier-body{padding:14px 16px;font-size:12px;color:#374151;line-height:1.7;flex:1;}
+    .tier-includes{font-size:11px;font-weight:600;color:#6B7280;
+                   text-transform:uppercase;letter-spacing:.05em;
+                   margin:10px 0 6px;}
+    .tier-cta{display:block;text-align:center;padding:9px;font-size:12px;font-weight:700;
+              text-decoration:none;border-top:1px solid #E5E7EB;margin-top:auto;
+              -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+
+    /* ── CTA section ── */
+    .cta-section{background:#F8FAFC;border:1px solid #E5E7EB;border-radius:6px;padding:28px 32px;}
+    .cta-buttons{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;}
+    .btn-primary{background:#1E2761;color:white;padding:11px 24px;border-radius:4px;
+                 font-size:13px;font-weight:700;text-decoration:none;
+                 -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .btn-secondary{background:white;color:#1E2761;padding:11px 24px;border-radius:4px;
+                   font-size:13px;font-weight:700;text-decoration:none;
+                   border:2px solid #1E2761;}
+
+    /* ── Comparison table ── */
+    .compare-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:16px;}
+    .compare-table th{padding:10px 14px;text-align:left;background:#1E2761;color:white;
+                      -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .compare-table td{padding:10px 14px;border-bottom:1px solid #E5E7EB;vertical-align:top;}
+    .compare-table tr:last-child td{border-bottom:none;}
+    .compare-table tr:nth-child(even) td{background:#F9FAFB;}
+
+    .footer{text-align:center;font-size:12px;color:#9CA3AF;padding:16px 32px;
+            border-top:1px solid #E5E7EB;}
+  </style>
+</head>
+<body>
+<div class="page">
+
+<!-- ── Header ────────────────────────────────────────────── -->
+<div class="header-bar">
+  <div>
+    <span class="brand">Layer8 Tech Group</span>
+    <span class="sub">Due Diligence Assessment &mdash; Product Overview</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Portfolio</a>
+    <a href="about_portfolio.html" class="nav-link">About Portfolio</a>
+    <a href="dd_guide.html" class="nav-link">DD Methodology</a>
+    <a href="dd_explainer.html" class="nav-link active">What Is This?</a>
+    <a href="https://demo.layer8techgroup.com" class="nav-link nav-ext" target="_blank">ER Demo &#8599;</a>
+  </nav>
+</div>
+
+<div class="content">
+
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<div class="hero">
+  <p class="hero-eyebrow">Layer8 Due Diligence Assessment</p>
+  <h1 class="hero-title">Know What You&rsquo;re Buying<br>Before You Buy It</h1>
+  <p class="hero-subtitle">AI-powered acquisition risk assessment for buyers, investors, and M&amp;A advisors</p>
+  <p class="hero-body">Most buyers discover material risks during diligence &mdash; after they&rsquo;ve
+  committed to a price and signed an LOI. The Layer8 Due Diligence Assessment surfaces those risks
+  before you commit, giving you the information you need to structure a better deal or walk away
+  cleanly.</p>
+</div>
+
+<!-- ── Section 1: The Problem ────────────────────────────── -->
+<section>
+  <h2>What buyers miss before they sign</h2>
+  <p style="color:#6B7280;font-size:13px;">The gap between what sellers represent and what buyers
+  find in diligence is where acquisition value is lost &mdash; or where deals fall apart entirely.</p>
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="stat-num" style="color:#DC2626;">67%</div>
+      <div class="stat-label">of SMB acquisitions experience post-LOI price reductions</div>
+      <div class="stat-desc">Due to diligence findings that were not surfaced before the
+      letter of intent was signed.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" style="color:#B45309;">4&ndash;6 mo</div>
+      <div class="stat-label">added to deal timelines</div>
+      <div class="stat-desc">When material gaps surface after the LOI is signed, deals stall
+      for months while buyers, sellers, and counsel negotiate around the findings.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" style="color:#1E2761;">$280K</div>
+      <div class="stat-label">average post-LOI price reduction</div>
+      <div class="stat-desc">When operational risk is not assessed pre-commitment, buyers
+      negotiate from a position of surprise, not preparation.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Section 2: What We Assess ─────────────────────────── -->
+<section>
+  <h2>Eight domains. Every acquisition risk.</h2>
+  <p class="section-sub">Scored from the buyer&rsquo;s perspective &mdash; high scores indicate risk, not readiness</p>
+  <p>The assessment evaluates all eight domains on a 1&ndash;10 risk scale. A score of 3/10 is good
+  (low risk). A score of 8/10 requires your board&rsquo;s attention before you proceed.</p>
+
+  <div class="domain-grid">
+
+    <div class="domain-card" style="border-top:3px solid #1E2761;">
+      <div class="domain-icon">&#128200;</div>
+      <div class="domain-name">Financial Quality</div>
+      <div class="domain-desc">QofE defensibility, add-back documentation, revenue recognition consistency, normalized EBITDA reliability</div>
+    </div>
+
+    <div class="domain-card" style="border-top:3px solid #BE123C;">
+      <div class="domain-icon">&#9878;&#65039;</div>
+      <div class="domain-name">Legal &amp; Liability Risk</div>
+      <div class="domain-desc">Open litigation, IP ownership clarity, contract assignment risk, regulatory compliance, employment law exposure</div>
+    </div>
+
+    <div class="domain-card" style="border-top:3px solid #EA580C;">
+      <div class="domain-icon">&#9881;&#65039;</div>
+      <div class="domain-name">Operational Risk</div>
+      <div class="domain-desc">Key person dependency, process documentation, supply chain concentration, systems fragility, business continuity</div>
+    </div>
+
+    <div class="domain-card" style="border-top:3px solid #B45309;">
+      <div class="domain-icon">&#128101;</div>
+      <div class="domain-name">Customer &amp; Revenue Risk</div>
+      <div class="domain-desc">Customer concentration, churn rate, contract transferability, pipeline quality, revenue predictability</div>
+    </div>
+
+    <div class="domain-card" style="border-top:3px solid #0369A1;">
+      <div class="domain-icon">&#128421;&#65039;</div>
+      <div class="domain-name">Technology &amp; Cyber Risk</div>
+      <div class="domain-desc">Cybersecurity posture, technical debt, data integrity, systems ownership, prior breach history</div>
+    </div>
+
+    <div class="domain-card" style="border-top:3px solid #7C3AED;">
+      <div class="domain-icon">&#128104;&#8205;&#128107;</div>
+      <div class="domain-name">Management &amp; Culture Risk</div>
+      <div class="domain-desc">Management team depth, key employee retention risk, cultural integration complexity, incentive alignment</div>
+    </div>
+
+    <div class="domain-card" style="border-top:3px solid #028090;">
+      <div class="domain-icon">&#127942;</div>
+      <div class="domain-name">Market &amp; Competitive Position</div>
+      <div class="domain-desc">Competitive moat defensibility, market share trend, pricing power, sustainable growth trajectory</div>
+    </div>
+
+    <div class="domain-card" style="border-top:3px solid #059669;">
+      <div class="domain-icon">&#128279;</div>
+      <div class="domain-name">Integration Complexity</div>
+      <div class="domain-desc">Systems integration difficulty, process harmonization, people integration, regulatory requirements</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Section 3: Three Buyer Types ──────────────────────── -->
+<section>
+  <h2>Weighted for how you actually buy</h2>
+  <p class="section-sub">Domain weights shift based on your buyer type &mdash; a PE firm and an SBA buyer care about very different risks</p>
+
+  <div class="persona-row">
+
+    <div class="persona-card">
+      <div class="persona-hdr" style="background:#EFF6FF;">
+        <div class="persona-icon">&#127974;</div>
+        <div class="persona-title" style="color:#1E2761;">PE / Institutional</div>
+        <div class="persona-tagline" style="color:#0369A1;">Platform &amp; add-on acquisitions</div>
+      </div>
+      <div class="persona-body">
+        Platform acquisitions and add-ons. Weighted toward management depth, financial quality, and
+        integration complexity. PE buyers need a scalable platform &mdash; key person dependency is a
+        fundamental value risk that cannot be fixed post-close without cost.
+        <div class="top-domains">&#9650; Financial Quality &nbsp;&middot;&nbsp; Management &amp; Culture &nbsp;&middot;&nbsp; Operational Risk</div>
+      </div>
+    </div>
+
+    <div class="persona-card">
+      <div class="persona-hdr" style="background:#F0FDFA;">
+        <div class="persona-icon">&#129309;</div>
+        <div class="persona-title" style="color:#0F766E;">Strategic Acquirer</div>
+        <div class="persona-tagline" style="color:#0F766E;">Market expansion &amp; capability</div>
+      </div>
+      <div class="persona-body">
+        Market expansion, capability acquisition, and customer base consolidation. Weighted toward
+        customer &amp; revenue risk and market position. Strategic buyers need the relationships and
+        market position to transfer &mdash; and the systems to integrate efficiently.
+        <div class="top-domains" style="color:#0F766E;">&#9650; Customer &amp; Revenue &nbsp;&middot;&nbsp; Legal &amp; Liability &nbsp;&middot;&nbsp; Market Position</div>
+      </div>
+    </div>
+
+    <div class="persona-card">
+      <div class="persona-hdr" style="background:#FFF7ED;">
+        <div class="persona-icon">&#128100;</div>
+        <div class="persona-title" style="color:#C2410C;">SBA / Individual Buyer</div>
+        <div class="persona-tagline" style="color:#C2410C;">Owner-operator transition</div>
+      </div>
+      <div class="persona-body">
+        Owner-operated business acquisition with personal loan guarantee. Weighted heavily toward
+        financial quality and operational risk. SBA buyers are personally guaranteeing the loan &mdash;
+        the business must be able to run without the current owner from day one.
+        <div class="top-domains" style="color:#C2410C;">&#9650; Financial Quality &nbsp;&middot;&nbsp; Operational Risk &nbsp;&middot;&nbsp; Customer &amp; Revenue</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Section 4: Three-Stage Process ────────────────────── -->
+<section>
+  <h2>How it works</h2>
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <div class="step-title">Intake</div>
+        <p class="step-desc">Submit basic company information, your buyer persona, and whatever documents
+        you have. The assessment can begin with a CIM and basic financials &mdash; no full data room
+        required. Select your buyer type (PE, Strategic, or SBA) to calibrate the risk weights
+        for your specific acquisition thesis.</p>
+        <div class="step-time">&#9201;&nbsp; 10 minutes</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <div class="step-title">Data Gathering Guide</div>
+        <p class="step-desc">Within 24 hours, receive a targeted guide showing exactly what documents
+        to request and what questions to ask the seller &mdash; specific to your buyer type and the
+        target&rsquo;s vertical. This Stage 2 deliverable gives you the right questions to take into
+        your next seller conversation, and the red flag indicators to watch for in their answers.</p>
+        <div class="step-time">&#9201;&nbsp; Delivered within 24 hours</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <div class="step-title">Full Assessment Report</div>
+        <p class="step-desc">Submit additional documents and seller responses. Layer8 delivers a scored
+        risk register across all eight domains, deal structure recommendations (price adjustment, escrow
+        holdback with release conditions, reps and warranties, earnout structure if warranted, walk
+        conditions if any domain exceeds critical thresholds), and a 30/60/90/180-day post-close
+        integration playbook with cost estimates and ROI framing.</p>
+        <div class="step-time">&#9201;&nbsp; 48&ndash;72 hours after documents received</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Section 5: What's In the Report ───────────────────── -->
+<section>
+  <h2>Four deliverables in every report</h2>
+
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <div class="feature-title">
+        <span class="feature-icon">&#128202;</span> Risk Register
+      </div>
+      <p class="feature-desc">Scored assessment across all eight domains with risk level badges
+      (LOW / MODERATE / HIGH RISK / CRITICAL), individual criterion findings drawn from submitted
+      documents, and deal structure implications per finding. See exactly which criteria are driving
+      risk and why.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-title">
+        <span class="feature-icon">&#128196;</span> Deal Structure Recommendations
+      </div>
+      <p class="feature-desc">Synthesized guidance on price adjustment with per-domain rationale,
+      escrow holdback amount and domain-specific release conditions, enhanced reps and warranties,
+      earnout structure if triggered by financial or customer risk, conditions precedent, and explicit
+      walk conditions if any domain exceeds critical thresholds.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-title">
+        <span class="feature-icon">&#128198;</span> Post-Close Integration Playbook
+      </div>
+      <p class="feature-desc">A 30/60/90/180-day action plan for after close &mdash; tied directly
+      to the risks identified in the assessment. Includes cost estimates, ROI framing, and Layer8
+      service mapping for each initiative. Persona-specific: PE buyers get MIP and KPI dashboard
+      initiatives; SBA buyers get day-one checklists and lender reporting setup.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-title">
+        <span class="feature-icon">&#128203;</span> Data Gathering Guide
+      </div>
+      <p class="feature-desc">Delivered at Stage 2 &mdash; before the full assessment &mdash; so you
+      can go back to the seller with the right questions before you commit to an LOI.
+      Persona-aware and vertical-specific. Includes document request priority tiers (CRITICAL /
+      STANDARD / COMPREHENSIVE) and red flag indicators for each seller question.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Section 6: Three Delivery Options ─────────────────── -->
+<section>
+  <h2>Choose your level of support</h2>
+
+  <div class="tier-row">
+
+    <div class="tier-card">
+      <div class="tier-hdr" style="background:#EFF6FF;">
+        <span class="tier-badge" style="color:#0369A1;background:#DBEAFE;">STANDARD</span>
+        <div class="tier-name" style="color:#1E2761;">Self-Serve Assessment</div>
+      </div>
+      <div class="tier-body">
+        Submit documents via our intake form. Receive your Data Gathering Guide within 24 hours
+        and your full report within 48&ndash;72 hours of document submission. The AI-assisted
+        scoring covers all eight domains with evidence-based findings from your documents.
+        <div class="tier-includes">Includes</div>
+        Risk Register &nbsp;&middot;&nbsp; Deal Structure Recommendations &nbsp;&middot;&nbsp; Integration Playbook
+      </div>
+      <a href="https://intake.layer8techgroup.com/due-diligence/" target="_blank"
+         class="tier-cta" style="color:#0369A1;">Start Assessment &#8594;</a>
+    </div>
+
+    <div class="tier-card">
+      <div class="tier-hdr" style="background:#F0FDFA;">
+        <span class="tier-badge" style="color:#0F766E;background:#CCFBF1;">ENHANCED</span>
+        <div class="tier-name" style="color:#0F766E;">Voice-Assisted Intake</div>
+      </div>
+      <div class="tier-body">
+        A Layer8 AI voice agent walks you through the buyer intake and helps structure your
+        Data Gathering Guide questions. Ideal for buyers who want to talk through the deal
+        before committing to a full written assessment.
+        <div class="tier-includes">Includes</div>
+        Everything in Standard + structured voice intake session
+      </div>
+      <a href="https://intake.layer8techgroup.com/due-diligence/" target="_blank"
+         class="tier-cta" style="color:#0F766E;">Schedule Voice Intake &#8594;</a>
+    </div>
+
+    <div class="tier-card">
+      <div class="tier-hdr" style="background:#1E2761;">
+        <span class="tier-badge" style="color:#C9A84C;background:rgba(201,168,76,.2);">PREMIUM</span>
+        <div class="tier-name" style="color:white;">Managed Seller Interview</div>
+      </div>
+      <div class="tier-body">
+        A Layer8 advisor conducts the seller interview on your behalf &mdash; asking the right
+        questions and flagging evasive responses you might miss. Includes evasion analysis and
+        a full interview transcript with red flag annotations.
+        <div class="tier-includes">Includes</div>
+        Everything in Enhanced + Layer8-conducted seller interview + transcript and red flag analysis
+      </div>
+      <a href="mailto:info@layer8techgroup.com"
+         class="tier-cta" style="color:#1E2761;background:#F8FAFC;">Contact Layer8 &#8594;</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Section 7: See It In Action ───────────────────────── -->
+<section>
+  <div class="cta-section">
+    <h2 style="border-bottom:none;margin-bottom:8px;">Browse the demo portfolio</h2>
+    <p style="max-width:640px;">Explore 12 real acquisition target assessments across multiple
+    verticals and buyer personas. See how the same company looks through different buyer lenses
+    &mdash; and compare with the seller-side Exit Readiness portfolio at
+    <a href="https://demo.layer8techgroup.com" style="color:#028090;font-weight:600;"
+       target="_blank">demo.layer8techgroup.com</a>.</p>
+    <div class="cta-buttons">
+      <a href="index.html" class="btn-primary">View DD Portfolio &#8594;</a>
+      <a href="https://demo.layer8techgroup.com" target="_blank" class="btn-secondary">View ER Portfolio &#8599;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Section 8: The Two-Sided Story ────────────────────── -->
+<section>
+  <h2>The same company. Two perspectives.</h2>
+  <p>Layer8 offers both the Exit Readiness Assessment for sellers and the Due Diligence Assessment
+  for buyers. When both sides of a transaction use Layer8, brokers get a complete picture of every
+  deal &mdash; and Layer8 sits at the center of the transaction.</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th style="width:28%;"></th>
+        <th>Exit Readiness Assessment</th>
+        <th>Due Diligence Assessment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="font-weight:600;color:#6B7280;">For</td>
+          <td>Sellers preparing their business for sale</td>
+          <td>Buyers evaluating an acquisition target</td></tr>
+      <tr><td style="font-weight:600;color:#6B7280;">Score meaning</td>
+          <td>High score = more ready, more valuable</td>
+          <td style="font-weight:600;color:#DC2626;">High score = higher risk to buyer</td></tr>
+      <tr><td style="font-weight:600;color:#6B7280;">Primary output</td>
+          <td>Value Recovery Roadmap, valuation uplift estimate</td>
+          <td>Risk Register, Deal Structure Recommendations</td></tr>
+      <tr><td style="font-weight:600;color:#6B7280;">Domains</td>
+          <td>7 (readiness-focused)</td>
+          <td>8 (risk-focused, adds Integration Complexity)</td></tr>
+      <tr><td style="font-weight:600;color:#6B7280;">Calibration</td>
+          <td>Industry vertical &times; tier</td>
+          <td>Buyer persona &times; vertical</td></tr>
+      <tr><td style="font-weight:600;color:#6B7280;">Demo</td>
+          <td><a href="https://demo.layer8techgroup.com" style="color:#028090;"
+              target="_blank">demo.layer8techgroup.com</a></td>
+          <td><a href="index.html" style="color:#028090;">dd.layer8techgroup.com</a></td></tr>
+    </tbody>
+  </table>
+</section>
+
+</div><!-- .content -->
+
+<div class="footer">Layer8 Tech Group &nbsp;&middot;&nbsp; layer8techgroup.com &nbsp;&middot;&nbsp; Confidential</div>
+</div><!-- .page -->
+</body>
+</html>
