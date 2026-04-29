@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DD Methodology — Layer8 Due Diligence Framework</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+         font-size:14px;line-height:1.7;color:#1F2937;background:#F3F4F6;margin:0;padding:0;}
+    .page{max-width:960px;margin:0 auto;background:white;}
+    .header-bar{background:#1E2761;color:white;padding:20px 32px;display:flex;
+                justify-content:space-between;align-items:center;
+                -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .brand{font-size:20px;font-weight:700;display:block;}
+    .sub{font-size:13px;opacity:.8;margin-top:2px;display:block;}
+    nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .nav-link{color:rgba(255,255,255,0.75);font-size:12px;text-decoration:none;
+              padding:5px 11px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;}
+    .nav-link.active{background:rgba(255,255,255,0.15);color:white;
+                     border-color:rgba(255,255,255,0.6);}
+    .nav-ext{color:#028090 !important;border-color:rgba(2,128,144,.5) !important;}
+    .content{padding:36px 40px;}
+    h1{font-size:26px;font-weight:700;color:#1E2761;margin:0 0 4px;}
+    .subtitle{font-size:16px;color:#028090;font-weight:500;margin:0 0 24px;}
+    h2{font-size:15px;color:#1E2761;border-bottom:2px solid #1E2761;
+       padding-bottom:5px;margin:32px 0 14px;}
+    h3{font-size:13px;font-weight:700;color:#374151;margin:16px 0 6px;}
+    p{margin:0 0 10px;color:#374151;}
+    .stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 24px;}
+    .stage-card{border:1px solid #E5E7EB;border-radius:6px;overflow:hidden;}
+    .stage-hdr{padding:10px 14px;font-size:12px;font-weight:800;text-transform:uppercase;
+               letter-spacing:.07em;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .stage-body{padding:12px 14px;font-size:12px;color:#374151;line-height:1.7;}
+    .domain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0;}
+    .domain-card{border:1px solid #E5E7EB;border-radius:6px;padding:12px 16px;}
+    .domain-icon{font-size:20px;margin-bottom:6px;}
+    .domain-name{font-size:13px;font-weight:700;color:#1E2761;margin-bottom:4px;}
+    .domain-desc{font-size:12px;color:#4B5563;line-height:1.6;}
+    .domain-buyer{font-size:11px;color:#028090;margin-top:6px;font-style:italic;}
+    .persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0;}
+    .persona-card{border:2px solid #1E2761;border-radius:6px;overflow:hidden;}
+    .persona-hdr{background:#1E2761;color:white;padding:10px 14px;
+                 font-size:12px;font-weight:700;
+                 -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .persona-sub{font-size:10px;opacity:.8;margin-top:2px;}
+    .persona-body{padding:12px 14px;font-size:12px;color:#374151;line-height:1.7;}
+    .output-list{list-style:none;padding:0;margin:14px 0;}
+    .output-list li{padding:10px 14px;border-left:3px solid #028090;
+                    margin-bottom:10px;background:#F8FAFC;border-radius:0 4px 4px 0;
+                    -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .output-list li strong{color:#1E2761;display:block;margin-bottom:3px;}
+    .cta-box{background:#1E2761;color:white;border-radius:6px;padding:20px 24px;
+             margin-top:32px;display:flex;justify-content:space-between;align-items:center;
+             gap:16px;flex-wrap:wrap;
+             -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .cta-box a{background:#028090;color:white;padding:10px 22px;border-radius:4px;
+               font-size:13px;font-weight:700;text-decoration:none;}
+    .risk-table{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0;}
+    .risk-table th{background:#1E2761;color:white;padding:8px 12px;text-align:left;
+                   -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .risk-table td{padding:8px 12px;border-bottom:1px solid #E5E7EB;}
+    .footer{text-align:center;font-size:12px;color:#9CA3AF;padding:16px 32px;
+            border-top:1px solid #E5E7EB;}
+  </style>
+</head>
+<body>
+<div class="page">
+
+<div class="header-bar">
+  <div>
+    <span class="brand">Layer8 Tech Group</span>
+    <span class="sub">Due Diligence Assessment &mdash; Methodology Guide</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Portfolio</a>
+    <a href="about_portfolio.html" class="nav-link">About This Portfolio</a>
+    <a href="dd_guide.html" class="nav-link active">DD Methodology</a>
+    <a href="https://demo.layer8techgroup.com" class="nav-link nav-ext" target="_blank">ER Demo &#8599;</a>
+  </nav>
+</div>
+
+<div class="content">
+  <h1>The Layer8 DD Assessment Framework</h1>
+  <div class="subtitle">How we evaluate acquisition targets from the buyer&rsquo;s perspective</div>
+
+  <p>The Layer8 Due Diligence Assessment is a structured, buyer-facing risk framework that scores
+  acquisition targets across eight domains, generates deal structure recommendations, and produces
+  a post-close integration playbook &mdash; all calibrated to the buyer&rsquo;s type and vertical.</p>
+
+  <h2>Overview &mdash; Three Stages, Eight Domains, Three Buyer Personas</h2>
+  <p>Every DD engagement follows a three-stage process. Each stage builds on the last, and each
+  deliverable is actionable on its own. Buyers can engage at any stage based on where they are
+  in the deal process.</p>
+
+  <div class="stage-grid">
+    <div class="stage-card">
+      <div class="stage-hdr" style="background:#EFF6FF;color:#1E2761;">Stage 1 &mdash; Intake</div>
+      <div class="stage-body">
+        Captures company basics, buyer persona selection, vertical, asking price, and initial
+        documents via web form or voice agent. Output: preliminary risk tier by domain.
+        <br><br><em>Time: 15 minutes</em>
+      </div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-hdr" style="background:#FFFBEB;color:#B45309;">Stage 2 &mdash; Data Gathering Guide</div>
+      <div class="stage-body">
+        Analyzes submitted documents and generates a targeted list of documents to request and
+        questions to ask the seller. Persona- and vertical-specific. Output: prioritized DD checklist.
+        <br><br><em>Delivered within 24 hours</em>
+      </div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-hdr" style="background:#FFF1F2;color:#DC2626;">Stage 3 &mdash; Full Assessment</div>
+      <div class="stage-body">
+        Full document room scoring across all 8 domains with evidence citations, deal structure
+        recommendations, and 180-day integration playbook. Output: complete risk register report.
+        <br><br><em>Delivered within 5 business days</em>
+      </div>
+    </div>
+  </div>
+
+  <h2>Eight Risk Domains</h2>
+  <p>Every assessment scores all eight domains on a <strong>1&ndash;10 risk scale</strong> where
+  <strong>higher scores mean higher risk</strong>. This is the inverse of the Exit Readiness
+  framework &mdash; a score of 2/10 is excellent (low risk); a score of 9/10 is near a walk condition.</p>
+
+  <div class="domain-grid">
+    <div class="domain-card">
+      <div class="domain-icon">&#128200;</div>
+      <div class="domain-name">Financial Quality</div>
+      <div class="domain-desc">Are earnings real, recurring, and defensible under Quality of Earnings scrutiny? Are add-backs documented and supportable?</div>
+      <div class="domain-buyer">Buyers care about: QofE defensibility, revenue recognition, AR quality, tax compliance</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-icon">&#9878;&#65039;</div>
+      <div class="domain-name">Legal &amp; Liability Risk</div>
+      <div class="domain-desc">Is the business clean &mdash; litigation, IP ownership, contracts, licenses? Are change-of-control provisions benign?</div>
+      <div class="domain-buyer">Buyers care about: open litigation, IP title, contract assignment, employment exposure</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-icon">&#9881;&#65039;</div>
+      <div class="domain-name">Operational Risk</div>
+      <div class="domain-desc">Can the business run without the current owner? Are processes documented? Is there a management bench?</div>
+      <div class="domain-buyer">Buyers care about: key person dependency, SOP documentation, vendor concentration, BCP</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-icon">&#128101;</div>
+      <div class="domain-name">Customer &amp; Revenue Risk</div>
+      <div class="domain-desc">Is revenue sticky, diversified, and contractually secure? What is the churn rate and forward visibility?</div>
+      <div class="domain-buyer">Buyers care about: customer concentration, recurring mix, churn, contract transferability</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-icon">&#128421;&#65039;</div>
+      <div class="domain-name">Technology &amp; Cyber Risk</div>
+      <div class="domain-desc">Is the tech stack modern, secure, and transferable? Are credentials entity-owned? Any prior breaches?</div>
+      <div class="domain-buyer">Buyers care about: MFA, EDR, technical debt, system ownership, incident history</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-icon">&#128104;&#8205;&#128107;</div>
+      <div class="domain-name">Management &amp; Culture Risk</div>
+      <div class="domain-desc">Will the team stay? Is there depth below the owner? How compatible is culture with the buyer?</div>
+      <div class="domain-buyer">Buyers care about: management depth, retention risk, cultural fit, incentive alignment</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-icon">&#127942;</div>
+      <div class="domain-name">Market &amp; Competitive Position</div>
+      <div class="domain-desc">Is the competitive position durable? Is market share stable or eroding? Does the business have pricing power?</div>
+      <div class="domain-buyer">Buyers care about: competitive moat, market share trend, CAC payback, growth sustainability</div>
+    </div>
+    <div class="domain-card">
+      <div class="domain-icon">&#128279;</div>
+      <div class="domain-name">Integration Complexity</div>
+      <div class="domain-desc">How hard and expensive is post-close integration? What systems work needs to happen? What regulatory steps are required?</div>
+      <div class="domain-buyer">Buyers care about: systems compatibility, process harmonization, org design, customer communication</div>
+    </div>
+  </div>
+
+  <h2>Three Buyer Personas</h2>
+  <p>Domain weights are adjusted for each buyer type. The same company will score differently
+  for a PE buyer versus an SBA buyer because each weights risks differently based on their
+  investment thesis and risk tolerance.</p>
+
+  <div class="persona-grid">
+    <div class="persona-card">
+      <div class="persona-hdr">
+        PE / Institutional
+        <div class="persona-sub">Platform &amp; add-on acquisitions</div>
+      </div>
+      <div class="persona-body">
+        Sophisticated underwriter with formal QofE, management team, and 100-day integration plan.
+        Weights financial quality (20%) and management depth (15%) heavily. Integration complexity
+        is modeled separately and weighted lower (5%).
+      </div>
+    </div>
+    <div class="persona-card">
+      <div class="persona-hdr">
+        Strategic Acquirer
+        <div class="persona-sub">Market expansion &amp; capability</div>
+      </div>
+      <div class="persona-body">
+        Buys for customer base, market position, or capability. Customer &amp; revenue (18%) and
+        market position (12%) are primary. Technology compatibility (12%) matters because it
+        determines integration cost and synergy timeline.
+      </div>
+    </div>
+    <div class="persona-card">
+      <div class="persona-hdr">
+        SBA / Individual Buyer
+        <div class="persona-sub">Owner-operator transition</div>
+      </div>
+      <div class="persona-body">
+        Personal guarantee on the SBA loan &mdash; this buyer IS the integration. Financial quality
+        (25%) and operational risk (20%) dominate because revenue and operations directly determine
+        debt service coverage. Integration complexity is nearly irrelevant (2%).
+      </div>
+    </div>
+  </div>
+
+  <h2>Risk Score Reference</h2>
+  <table class="risk-table">
+    <thead><tr>
+      <th>Score Range</th><th>Label</th><th>Deal Implication</th><th>Buyer Action</th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="font-weight:700;color:#059669;">1&ndash;3</td><td>LOW RISK</td><td>No material concern in this domain</td><td>Standard representations only</td></tr>
+      <tr style="background:#FAFAFA;"><td style="font-weight:700;color:#B45309;">4&ndash;5</td><td>MODERATE</td><td>Minor issues, manageable with standard diligence</td><td>Enhanced R&amp;W coverage recommended</td></tr>
+      <tr><td style="font-weight:700;color:#EA580C;">6&ndash;7</td><td>HIGH RISK</td><td>Requires active attention and deal term adjustment</td><td>Price adjustment, escrow, or earnout</td></tr>
+      <tr style="background:#FAFAFA;"><td style="font-weight:700;color:#DC2626;">8&ndash;9</td><td>CRITICAL</td><td>Material risk &mdash; escrow, price adjustment, earnout</td><td>Specialist review required before LOI</td></tr>
+      <tr><td style="font-weight:700;color:#7F1D1D;">10</td><td>DEAL BREAKER</td><td>Review before proceeding &mdash; potential walk</td><td>Board review required</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What&rsquo;s in Every Stage 3 Report</h2>
+  <ul class="output-list">
+    <li>
+      <strong>Executive Summary</strong>
+      Overall risk rating, top 3 risk domains, deal structure headline, walk condition flag if triggered.
+    </li>
+    <li>
+      <strong>Domain Risk Register</strong>
+      Scored criteria table with risk findings and deal implications. 8 domains &times; 5 criteria = 40 scored items.
+    </li>
+    <li>
+      <strong>Deal Structure Recommendations</strong>
+      Price adjustment with rationale, escrow holdback with release conditions, enhanced R&amp;W terms,
+      earnout structure if triggered, conditions precedent, walk conditions, and specialist reviews.
+    </li>
+    <li>
+      <strong>Post-Close Integration Playbook</strong>
+      30/60/90/180-day initiative plan with cost estimates, ROI framing, owner assignments,
+      and three Layer8 engagement options (Advisory / Project / Retainer).
+    </li>
+  </ul>
+
+  <div class="cta-box">
+    <div>
+      <div style="font-size:16px;font-weight:700;margin-bottom:6px;">Ready to assess your acquisition target?</div>
+      <div style="font-size:13px;opacity:.85;">Start with Stage 1 intake &mdash; takes 15 minutes and generates your Data Gathering Guide.</div>
+    </div>
+    <a href="https://intake.layer8techgroup.com/due-diligence/" target="_blank">Start a DD Assessment &#8594;</a>
+  </div>
+
+</div>
+<div class="footer">Layer8 Tech Group &nbsp;&middot;&nbsp; layer8techgroup.com &nbsp;&middot;&nbsp; Confidential</div>
+</div>
+</body>
+</html>

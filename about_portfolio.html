@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About This Portfolio — Layer8 DD Demo</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+         font-size:14px;line-height:1.7;color:#1F2937;background:#F3F4F6;margin:0;padding:0;}
+    .page{max-width:1000px;margin:0 auto;background:white;}
+    .header-bar{background:#1E2761;color:white;padding:20px 32px;display:flex;
+                justify-content:space-between;align-items:center;
+                -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .brand{font-size:20px;font-weight:700;display:block;}
+    .sub{font-size:13px;opacity:.8;margin-top:2px;display:block;}
+    nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .nav-link{color:rgba(255,255,255,0.75);font-size:12px;text-decoration:none;
+              padding:5px 11px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;}
+    .nav-link.active{background:rgba(255,255,255,0.15);color:white;
+                     border-color:rgba(255,255,255,0.6);}
+    .nav-ext{color:#028090 !important;border-color:rgba(2,128,144,.5) !important;}
+    .content{padding:36px 40px;}
+    .intro-block{margin:0 0 32px;}
+    .intro-block h1{font-size:26px;font-weight:700;color:#1E2761;margin:0 0 6px;}
+    .intro-block .subtitle{font-size:16px;color:#028090;font-weight:500;margin:0 0 16px;}
+    .intro-block p{font-size:14px;color:#374151;max-width:720px;line-height:1.8;margin:0 0 10px;}
+    .co-grid{display:flex;flex-direction:column;gap:16px;}
+    .co-card{border:1px solid #E5E7EB;border-radius:6px;overflow:hidden;}
+    .co-card-hdr{background:#1E2761;color:white;padding:12px 18px;display:flex;
+                 align-items:center;gap:12px;justify-content:space-between;
+                 -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .co-name{font-size:14px;font-weight:700;}
+    .co-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+    .pill{display:inline-block;padding:2px 9px;border-radius:10px;font-size:11px;
+          font-weight:700;white-space:nowrap;
+          -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .co-body{padding:14px 18px;}
+    .backstory{font-size:13px;color:#374151;line-height:1.8;margin:0 0 10px;}
+    .key-risk{display:flex;align-items:flex-start;gap:8px;background:#FFF7ED;
+              border-left:3px solid #EA580C;border-radius:0 4px 4px 0;
+              padding:8px 12px;font-size:12px;color:#374151;margin-bottom:10px;
+              -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .key-risk strong{color:#EA580C;white-space:nowrap;}
+    .report-link{font-size:12px;font-weight:700;color:#028090;text-decoration:none;}
+    .footer{text-align:center;font-size:12px;color:#9CA3AF;padding:16px 32px;
+            border-top:1px solid #E5E7EB;}
+  </style>
+</head>
+<body>
+<div class="page">
+
+<div class="header-bar">
+  <div>
+    <span class="brand">Layer8 Tech Group</span>
+    <span class="sub">Due Diligence Assessment &mdash; About This Portfolio</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Portfolio</a>
+    <a href="about_portfolio.html" class="nav-link active">About This Portfolio</a>
+    <a href="dd_guide.html" class="nav-link">DD Methodology</a>
+    <a href="https://demo.layer8techgroup.com" class="nav-link nav-ext" target="_blank">ER Demo &#8599;</a>
+  </nav>
+</div>
+
+<div class="content">
+  <div class="intro-block">
+    <h1>About This Portfolio</h1>
+    <div class="subtitle">The buyer&rsquo;s perspective on 12 acquisition targets</div>
+    <p>Each company in this portfolio was independently assessed using the Layer8 Due Diligence framework.
+    The assessments reflect realistic buyer-side findings &mdash; not seller representations. The same
+    companies appear in the Exit Readiness portfolio assessed from the seller&rsquo;s perspective, creating
+    a complete picture of each transaction from both sides of the table.</p>
+    <p>Risk scores are <strong>inverted from the ER framework</strong>: a score of 3/10 means
+    <em>low risk to the buyer</em>, while a score of 8/10 means <em>critical risk</em>. A company
+    that scores 8.0 on the ER readiness scale may score 3.0 on the DD risk scale &mdash; reflecting
+    the same underlying business quality, viewed through opposite lenses.</p>
+  </div>
+
+  <div class="co-grid">
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Meridian Pediatric Group</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#059669;background:rgba(5,150,105,.2);">Healthcare</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">PE Institutional</span>
+          <span class="pill" style="color:#059669;background:rgba(5,150,105,.2);">3.3/10 LOW RISK</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A well-run pediatric practice with clean financials and strong market position.
+        The primary buyer concern is provider dependency &mdash; two physicians generate 70% of patient revenue,
+        and their retention post-close is the most material acquisition risk. PE buyers should structure
+        retention agreements before close.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Operational Risk &mdash; provider dependency concentrated in two physicians</div>
+        <a href="reports/meridian_pediatric_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Halcyon Wealth Advisors</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#93C5FD;background:rgba(147,197,253,.2);">Accounting / RIA</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">Strategic Acquirer</span>
+          <span class="pill" style="color:#059669;background:rgba(5,150,105,.2);">3.0/10 LOW RISK</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A strong RIA with clean books and solid AUM growth. Client portability is the
+        central diligence question &mdash; advisor relationships are personal, and book transfer assumptions
+        in the purchase price need validation. Strategic acquirers should require a retention period with
+        clawback provisions.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Customer &amp; Revenue Risk &mdash; client portability dependent on advisor relationships</div>
+        <a href="reports/halcyon_wealth_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Cornerstone Commercial Cleaning</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#D1D5DB;background:rgba(209,213,219,.2);">General</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">SBA Individual</span>
+          <span class="pill" style="color:#B45309;background:rgba(180,83,9,.2);">4.6/10 MODERATE</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A mid-range cleaning company with consistent revenue but thin documentation.
+        Owner dependency is significant &mdash; customer relationships and scheduling are owner-held.
+        An SBA buyer should require a 12-month transition period and confirm key customer contracts
+        are assignable.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Operational Risk &mdash; owner dependency in customer relationships and scheduling</div>
+        <a href="reports/cornerstone_cleaning_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Peachtree Integrated Solutions</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#C4B5FD;background:rgba(196,181,253,.2);">Technology / MSP</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">PE Institutional</span>
+          <span class="pill" style="color:#B45309;background:rgba(180,83,9,.2);">4.6/10 MODERATE</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">An MSP with solid MRR but owner-dependent sales. The technical stack is
+        adequate but the sales function dies with the current owner. PE buyers should model the cost
+        of rebuilding a sales motion post-close as a reduction to the purchase price.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Management &amp; Culture Risk &mdash; owner-held sales function with thin bench below</div>
+        <a href="reports/peachtree_integrated_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Helix Health Technologies</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#6EE7B7;background:rgba(110,231,183,.2);">Healthcare Tech</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">PE Institutional</span>
+          <span class="pill" style="color:#B45309;background:rgba(180,83,9,.2);">5.4/10 MODERATE</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A healthcare tech company with regulatory and IP complexity. HIPAA compliance
+        posture needs independent verification, and IP ownership for contractor-developed components is
+        unclear. PE buyers should require a technical and legal specialist review before LOI.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Legal &amp; Liability Risk &mdash; HIPAA compliance and IP ownership ambiguity</div>
+        <a href="reports/helix_health_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Blue Collar Systems</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#D1D5DB;background:rgba(209,213,219,.2);">General / Trades</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">SBA Individual</span>
+          <span class="pill" style="color:#B45309;background:rgba(180,83,9,.2);">5.7/10 MODERATE</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A trades company where the owner is the business. Revenue, customer
+        relationships, and operational knowledge are entirely concentrated in one person. An SBA buyer
+        is effectively buying themselves a job &mdash; the transition period and knowledge transfer plan
+        are the most critical deal terms.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Operational Risk &mdash; owner IS the business with no viable succession</div>
+        <a href="reports/blue_collar_systems_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Garrison Professional Advisors</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#93C5FD;background:rgba(147,197,253,.2);">Accounting / CPA</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">SBA Individual</span>
+          <span class="pill" style="color:#B45309;background:rgba(180,83,9,.2);">5.3/10 MODERATE</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A solo CPA practice where client book portability is the only asset being
+        acquired. Client relationships are personal to the owner, and the assumption that they transfer
+        is the central diligence risk. An SBA buyer should structure an earnout tied to client retention
+        at 12 and 24 months post-close.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Operational Risk &mdash; solo practice, entire book personal to owner</div>
+        <a href="reports/garrison_accounting_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Mercer Law Partners</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#FDE68A;background:rgba(253,230,138,.2);">Legal</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">Strategic Acquirer</span>
+          <span class="pill" style="color:#B45309;background:rgba(180,83,9,.2);">5.3/10 MODERATE</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A two-partner law firm where both partners hold the client relationships.
+        Book portability is the primary acquisition risk &mdash; clients follow attorneys, not firms.
+        A strategic acquirer needs retention agreements with both partners as a condition of close,
+        not a post-close aspiration.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Customer &amp; Revenue Risk &mdash; book portability dependent on partner retention</div>
+        <a href="reports/mercer_law_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Greenscape Landscape Services</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#D1D5DB;background:rgba(209,213,219,.2);">General / Landscaping</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">SBA Individual</span>
+          <span class="pill" style="color:#EA580C;background:rgba(234,88,12,.2);">6.0/10 HIGH RISK</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A seasonal landscaping business with informal financials and significant
+        owner dependency. Labor compliance risk is elevated &mdash; I-9 documentation and worker
+        classification need independent review. An SBA buyer should budget for employment counsel
+        as part of diligence costs.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Technology &amp; Cyber Risk &mdash; minimal systems, operations run manually with no continuity plan</div>
+        <a href="reports/greenscape_landscape_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Apex Managed Solutions</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#C4B5FD;background:rgba(196,181,253,.2);">Technology / MSP</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">Strategic Acquirer</span>
+          <span class="pill" style="color:#B45309;background:rgba(180,83,9,.2);">5.8/10 MODERATE</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A small break-fix MSP where the owner is the primary engineer. MRR is
+        limited and the revenue model is transactional. A strategic acquirer buying for customer
+        relationships should validate that those relationships are with the business, not the
+        individual, before pricing any synergy premium.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Customer &amp; Revenue Risk &mdash; break-fix model with no recurring revenue base</div>
+        <a href="reports/apex_managed_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr">
+        <span class="co-name">Atlas Security Technologies</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#D1D5DB;background:rgba(209,213,219,.2);">General / Security</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">Strategic Acquirer</span>
+          <span class="pill" style="color:#EA580C;background:rgba(234,88,12,.2);">6.0/10 HIGH RISK</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">A security integrator with project-based revenue and no recurring contracts.
+        Customer revenue risk is the highest in the portfolio &mdash; no contract provides for recurring
+        revenue post-close. A strategic acquirer should model day-one revenue as zero recurring and build
+        the acquisition price around demonstrable backlog only.</p>
+        <div class="key-risk"><strong>Key Risk:</strong>&nbsp; Customer &amp; Revenue Risk &mdash; entirely project-based, zero recurring revenue</div>
+        <a href="reports/atlas_security_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+    <div class="co-card">
+      <div class="co-card-hdr" style="background:#7F1D1D;">
+        <span class="co-name">Pinnacle Integrated Solutions</span>
+        <div class="co-meta">
+          <span class="pill" style="color:#D1D5DB;background:rgba(209,213,219,.2);">General / IT MSP</span>
+          <span class="pill" style="color:#C9A84C;background:rgba(201,168,76,.2);">PE Institutional</span>
+          <span class="pill" style="color:#FCA5A5;background:rgba(252,165,165,.2);">7.0/10 HIGH RISK</span>
+        </div>
+      </div>
+      <div class="co-body">
+        <p class="backstory">The highest-risk company in the portfolio. Material gaps across all eight
+        domains &mdash; owner dependency, technology debt, customer concentration, and thin financial
+        documentation all present simultaneously. A PE buyer should either walk or structure with
+        significant escrow, earnout, and specialist remediation requirements built into the LOI.</p>
+        <div class="key-risk" style="border-left-color:#DC2626;background:#FEF2F2;">
+          <strong style="color:#DC2626;">Key Risk:</strong>&nbsp; Multiple domains &mdash; HIGH RISK across operational, technology, customer, and management dimensions
+        </div>
+        <a href="reports/pinnacle_integrated_dd_independent.html" class="report-link">View Full DD Report &#8594;</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="footer">Layer8 Tech Group &nbsp;&middot;&nbsp; layer8techgroup.com &nbsp;&middot;&nbsp; Confidential</div>
+</div>
+</body>
+</html>

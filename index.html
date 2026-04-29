@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layer8 Due Diligence Assessment — Buyer Portfolio</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+         font-size:14px;line-height:1.6;color:#1F2937;background:#F3F4F6;margin:0;padding:0;}
+    .page{max-width:1100px;margin:0 auto;background:white;}
+    .header-bar{background:#1E2761;color:white;padding:20px 32px;display:flex;
+                justify-content:space-between;align-items:center;
+                -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .brand{font-size:20px;font-weight:700;display:block;}
+    .sub{font-size:13px;opacity:.8;margin-top:2px;display:block;}
+    nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .nav-link{color:rgba(255,255,255,0.75);font-size:12px;text-decoration:none;
+              padding:5px 11px;border:1px solid rgba(255,255,255,0.3);border-radius:4px;}
+    .nav-link.active{background:rgba(255,255,255,0.15);color:white;
+                     border-color:rgba(255,255,255,0.6);}
+    .nav-ext{color:#028090 !important;border-color:rgba(2,128,144,.5) !important;}
+    .content{padding:28px 32px;}
+    .callout{background:#F0FDFA;border:1px solid #99F6E4;border-radius:6px;
+             padding:14px 18px;margin:0 0 22px;font-size:13px;color:#134E4A;
+             -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .callout a{color:#028090;font-weight:700;text-decoration:none;}
+    .stats-bar{display:flex;flex-wrap:wrap;background:#F8F9FA;border:1px solid #E5E7EB;
+               border-radius:6px;margin:0 0 20px;overflow:hidden;
+               -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .stat{flex:1;min-width:130px;padding:14px 12px;text-align:center;
+          border-right:1px solid #E5E7EB;}
+    .stat:last-child{border-right:none;}
+    .stat-val{font-size:21px;font-weight:700;color:#1E2761;}
+    .stat-lbl{font-size:11px;color:#6B7280;text-transform:uppercase;
+              letter-spacing:.05em;margin-top:2px;}
+    .dist-bar{display:flex;flex-wrap:wrap;background:white;border:1px solid #E5E7EB;
+              border-radius:6px;margin:0 0 24px;overflow:hidden;
+              -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .dist-bar>div{flex:1;min-width:130px;padding:14px 0;text-align:center;
+                 border-right:1px solid #E5E7EB;}
+    .dist-bar>div:last-child{border-right:none;}
+    h2{font-size:15px;color:#1E2761;border-bottom:2px solid #1E2761;
+       padding-bottom:6px;margin:0 0 14px;}
+    table{width:100%;border-collapse:collapse;font-size:13px;}
+    th{background:#1E2761;color:white;padding:10px 12px;text-align:left;font-weight:600;
+       -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    td{padding:10px 12px;border-bottom:1px solid #E5E7EB;vertical-align:middle;}
+    tr:last-child td{border-bottom:none;}
+    tr:nth-child(even) td{background:#F9FAFB;}
+    .pill{display:inline-block;padding:3px 10px;border-radius:10px;font-size:11px;
+          font-weight:700;white-space:nowrap;
+          -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .risk-score{font-size:15px;font-weight:800;}
+    .note{font-size:12px;color:#6B7280;margin-top:16px;border-top:1px solid #E5E7EB;padding-top:12px;}
+    .footer{text-align:center;font-size:12px;color:#9CA3AF;padding:16px 32px;
+            border-top:1px solid #E5E7EB;}
+  </style>
+</head>
+<body>
+<div class="page">
+
+<div class="header-bar">
+  <div>
+    <span class="brand">Layer8 Tech Group</span>
+    <span class="sub">Due Diligence Assessment &mdash; Buyer-Side Risk Portfolio</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link active">Portfolio</a>
+    <a href="about_portfolio.html" class="nav-link">About This Portfolio</a>
+    <a href="dd_guide.html" class="nav-link">DD Methodology</a>
+    <a href="https://demo.layer8techgroup.com" class="nav-link nav-ext" target="_blank">ER Demo &#8599;</a>
+  </nav>
+</div>
+
+<div class="content">
+
+  <div class="callout">
+    <strong>Demo portfolio:</strong> This portfolio demonstrates the Layer8 Due Diligence Assessment
+    across multiple verticals, buyer personas, and risk profiles. Each report scores acquisition risk
+    from the buyer&rsquo;s perspective across 8 domains, generates deal structure recommendations,
+    and delivers a post-close integration playbook.
+    Compare with the Exit Readiness portfolio at
+    <a href="https://demo.layer8techgroup.com" target="_blank">demo.layer8techgroup.com</a>
+    to see how the same companies look from both sides of a transaction.
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat"><div class="stat-val">12</div><div class="stat-lbl">Companies Assessed</div></div>
+    <div class="stat"><div class="stat-val">5.0/10</div><div class="stat-lbl">Portfolio Avg Risk</div></div>
+    <div class="stat"><div class="stat-val">2</div><div class="stat-lbl">LOW RISK</div></div>
+    <div class="stat"><div class="stat-val">7</div><div class="stat-lbl">MODERATE</div></div>
+    <div class="stat"><div class="stat-val">3</div><div class="stat-lbl">HIGH RISK</div></div>
+    <div class="stat"><div class="stat-val">8</div><div class="stat-lbl">Domains Assessed</div></div>
+  </div>
+
+  <div class="dist-bar">
+    <div><div style="font-size:22px;font-weight:700;color:#059669;">2</div><div style="font-size:11px;color:#6B7280;margin-top:2px;">PROCEED</div></div>
+    <div><div style="font-size:22px;font-weight:700;color:#B45309;">7</div><div style="font-size:11px;color:#6B7280;margin-top:2px;">PROCEED WITH STRUCTURE</div></div>
+    <div><div style="font-size:22px;font-weight:700;color:#EA580C;">3</div><div style="font-size:11px;color:#6B7280;margin-top:2px;">PROCEED WITH CAUTION</div></div>
+    <div><div style="font-size:22px;font-weight:700;color:#DC2626;">0</div><div style="font-size:11px;color:#6B7280;margin-top:2px;">DO NOT PROCEED</div></div>
+  </div>
+
+  <p style="font-size:13px;color:#374151;margin:0 0 18px;">
+    The following portfolio presents 12 businesses assessed from the buyer&rsquo;s perspective.
+    Each report identifies acquisition risk across 8 domains, generates deal structure recommendations,
+    and delivers a post-close integration playbook. Buyer persona and vertical weighting are applied
+    to each assessment.
+  </p>
+
+  <h2>Buyer-Side Risk Portfolio &mdash; 12 Acquisition Targets</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:28px;">#</th>
+        <th>Company</th>
+        <th style="width:100px;">Vertical</th>
+        <th style="width:110px;">Buyer Persona</th>
+        <th style="width:90px;text-align:center;">Risk Score</th>
+        <th style="width:110px;">Risk Label</th>
+        <th style="width:170px;">Recommendation</th>
+        <th style="width:90px;"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">1</td>
+        <td><div style="font-weight:600;font-size:13px;">Meridian Pediatric Group</div><div style="font-size:11px;color:#6B7280;">Healthcare &nbsp;&middot;&nbsp; $7.5M ask</div></td>
+        <td><span class="pill" style="color:#059669;background:#ECFDF5;">Healthcare</span></td>
+        <td style="font-size:12px;color:#374151;">PE Institutional</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#059669;">3.3</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#059669;background:#ECFDF5;">LOW RISK</span></td>
+        <td><span class="pill" style="color:#059669;background:#ECFDF5;">PROCEED</span></td>
+        <td><a href="reports/meridian_pediatric_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr style="background:#F9FAFB;">
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">2</td>
+        <td><div style="font-weight:600;font-size:13px;">Halcyon Wealth Advisors</div><div style="font-size:11px;color:#6B7280;">Accounting / RIA &nbsp;&middot;&nbsp; $2.8M ask</div></td>
+        <td><span class="pill" style="color:#0369A1;background:#EFF6FF;">Accounting</span></td>
+        <td style="font-size:12px;color:#374151;">Strategic Acquirer</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#059669;">3.0</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#059669;background:#ECFDF5;">LOW RISK</span></td>
+        <td><span class="pill" style="color:#059669;background:#ECFDF5;">PROCEED</span></td>
+        <td><a href="reports/halcyon_wealth_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr>
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">3</td>
+        <td><div style="font-weight:600;font-size:13px;">Garrison Professional Advisors</div><div style="font-size:11px;color:#6B7280;">Accounting / CPA &nbsp;&middot;&nbsp; $750K ask</div></td>
+        <td><span class="pill" style="color:#0369A1;background:#EFF6FF;">Accounting</span></td>
+        <td style="font-size:12px;color:#374151;">SBA Individual</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#B45309;">5.3</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">MODERATE</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">PROCEED WITH STRUCTURE</span></td>
+        <td><a href="reports/garrison_accounting_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr style="background:#F9FAFB;">
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">4</td>
+        <td><div style="font-weight:600;font-size:13px;">Mercer Law Partners</div><div style="font-size:11px;color:#6B7280;">Legal &nbsp;&middot;&nbsp; $1.2M ask</div></td>
+        <td><span class="pill" style="color:#713F12;background:#FEF9C3;">Legal</span></td>
+        <td style="font-size:12px;color:#374151;">Strategic Acquirer</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#B45309;">5.3</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">MODERATE</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">PROCEED WITH STRUCTURE</span></td>
+        <td><a href="reports/mercer_law_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr>
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">5</td>
+        <td><div style="font-weight:600;font-size:13px;">Cornerstone Commercial Cleaning</div><div style="font-size:11px;color:#6B7280;">General / Commercial Services &nbsp;&middot;&nbsp; $1.8M ask</div></td>
+        <td><span class="pill" style="color:#4B5563;background:#F3F4F6;">General</span></td>
+        <td style="font-size:12px;color:#374151;">SBA Individual</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#B45309;">4.6</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">MODERATE</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">PROCEED WITH STRUCTURE</span></td>
+        <td><a href="reports/cornerstone_cleaning_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr style="background:#F9FAFB;">
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">6</td>
+        <td><div style="font-weight:600;font-size:13px;">Peachtree Integrated Solutions</div><div style="font-size:11px;color:#6B7280;">Technology / MSP &nbsp;&middot;&nbsp; $6.0M ask</div></td>
+        <td><span class="pill" style="color:#5B21B6;background:#EDE9FE;">Technology</span></td>
+        <td style="font-size:12px;color:#374151;">PE Institutional</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#B45309;">4.6</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">MODERATE</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">PROCEED WITH STRUCTURE</span></td>
+        <td><a href="reports/peachtree_integrated_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr>
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">7</td>
+        <td><div style="font-weight:600;font-size:13px;">Helix Health Technologies</div><div style="font-size:11px;color:#6B7280;">Healthcare Technology &nbsp;&middot;&nbsp; $4.5M ask</div></td>
+        <td><span class="pill" style="color:#059669;background:#ECFDF5;">Healthcare</span></td>
+        <td style="font-size:12px;color:#374151;">PE Institutional</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#B45309;">5.4</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">MODERATE</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">PROCEED WITH STRUCTURE</span></td>
+        <td><a href="reports/helix_health_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr style="background:#F9FAFB;">
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">8</td>
+        <td><div style="font-weight:600;font-size:13px;">Blue Collar Systems</div><div style="font-size:11px;color:#6B7280;">General / Trades &nbsp;&middot;&nbsp; $950K ask</div></td>
+        <td><span class="pill" style="color:#4B5563;background:#F3F4F6;">General</span></td>
+        <td style="font-size:12px;color:#374151;">SBA Individual</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#B45309;">5.7</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">MODERATE</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">PROCEED WITH STRUCTURE</span></td>
+        <td><a href="reports/blue_collar_systems_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr>
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">9</td>
+        <td><div style="font-weight:600;font-size:13px;">Apex Managed Solutions</div><div style="font-size:11px;color:#6B7280;">Technology / MSP &nbsp;&middot;&nbsp; $1.2M ask</div></td>
+        <td><span class="pill" style="color:#5B21B6;background:#EDE9FE;">Technology</span></td>
+        <td style="font-size:12px;color:#374151;">Strategic Acquirer</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#B45309;">5.8</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">MODERATE</span></td>
+        <td><span class="pill" style="color:#B45309;background:#FFFBEB;">PROCEED WITH STRUCTURE</span></td>
+        <td><a href="reports/apex_managed_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr style="background:#F9FAFB;">
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">10</td>
+        <td><div style="font-weight:600;font-size:13px;">Greenscape Landscape Services</div><div style="font-size:11px;color:#6B7280;">General / Landscaping &nbsp;&middot;&nbsp; $850K ask</div></td>
+        <td><span class="pill" style="color:#4B5563;background:#F3F4F6;">General</span></td>
+        <td style="font-size:12px;color:#374151;">SBA Individual</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#EA580C;">6.0</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#EA580C;background:#FFF7ED;">HIGH RISK</span></td>
+        <td><span class="pill" style="color:#EA580C;background:#FFF7ED;">PROCEED WITH CAUTION</span></td>
+        <td><a href="reports/greenscape_landscape_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr>
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">11</td>
+        <td><div style="font-weight:600;font-size:13px;">Atlas Security Technologies</div><div style="font-size:11px;color:#6B7280;">General / Security Integrator &nbsp;&middot;&nbsp; $900K ask</div></td>
+        <td><span class="pill" style="color:#4B5563;background:#F3F4F6;">General</span></td>
+        <td style="font-size:12px;color:#374151;">Strategic Acquirer</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#EA580C;">6.0</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#EA580C;background:#FFF7ED;">HIGH RISK</span></td>
+        <td><span class="pill" style="color:#EA580C;background:#FFF7ED;">PROCEED WITH CAUTION</span></td>
+        <td><a href="reports/atlas_security_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+      <tr style="background:#F9FAFB;">
+        <td style="color:#9CA3AF;font-size:12px;text-align:center;">12</td>
+        <td><div style="font-weight:600;font-size:13px;">Pinnacle Integrated Solutions</div><div style="font-size:11px;color:#6B7280;">General / IT MSP &nbsp;&middot;&nbsp; $3.0M ask</div></td>
+        <td><span class="pill" style="color:#4B5563;background:#F3F4F6;">General</span></td>
+        <td style="font-size:12px;color:#374151;">PE Institutional</td>
+        <td style="text-align:center;"><span class="risk-score" style="color:#EA580C;">7.0</span><span style="font-size:11px;color:#9CA3AF;">/10</span></td>
+        <td><span class="pill" style="color:#EA580C;background:#FFF7ED;">HIGH RISK</span></td>
+        <td><span class="pill" style="color:#EA580C;background:#FFF7ED;">PROCEED WITH CAUTION</span></td>
+        <td><a href="reports/pinnacle_integrated_dd_independent.html" style="color:#028090;font-weight:600;font-size:12px;text-decoration:none;">View Report &#8594;</a></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <p class="note">
+    Risk scores are on a 1&ndash;10 scale where higher scores indicate greater acquisition risk.
+    Scores reflect independent buyer-side assessment across 8 domains: Financial Quality, Legal &amp;
+    Liability, Operational Risk, Customer &amp; Revenue, Technology &amp; Cyber, Management &amp; Culture,
+    Market Position, and Integration Complexity. Buyer persona and vertical weighting are applied
+    per company. <strong>LOW RISK</strong> = 1&ndash;3 &nbsp;&middot;&nbsp;
+    <strong>MODERATE</strong> = 4&ndash;5 &nbsp;&middot;&nbsp;
+    <strong>HIGH RISK</strong> = 6&ndash;7 &nbsp;&middot;&nbsp;
+    <strong>CRITICAL</strong> = 8&ndash;9 &nbsp;&middot;&nbsp;
+    <strong>DEAL BREAKER</strong> = 10
+  </p>
+
+</div>
+<div class="footer">Layer8 Tech Group &nbsp;&middot;&nbsp; layer8techgroup.com &nbsp;&middot;&nbsp; Confidential</div>
+</div>
+</body>
+</html>

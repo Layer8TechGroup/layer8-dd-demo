@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DD Demo Guide [INTERNAL] — Layer8</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+         font-size:13.5px;line-height:1.7;color:#1F2937;background:#F3F4F6;margin:0;padding:0;}
+    .page{max-width:960px;margin:0 auto;background:white;}
+    .header-bar{background:#1E2761;color:white;padding:18px 32px;display:flex;
+                justify-content:space-between;align-items:center;
+                -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .brand{font-size:20px;font-weight:700;}
+    .sub{font-size:12px;opacity:.8;margin-top:2px;}
+    .internal-banner{background:#DC2626;color:white;text-align:center;padding:7px 32px;
+                     font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+                     -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .content{padding:32px 36px;}
+    h1{font-size:22px;font-weight:700;color:#1E2761;margin:0 0 6px;}
+    .subtitle{font-size:14px;color:#028090;margin:0 0 24px;}
+    h2{font-size:15px;color:#1E2761;border-bottom:2px solid #1E2761;padding-bottom:5px;margin:32px 0 14px;}
+    h3{font-size:13px;font-weight:700;color:#374151;margin:16px 0 6px;}
+    p{margin:0 0 10px;}
+    ul,ol{padding-left:20px;margin:0 0 10px;}
+    li{margin-bottom:5px;}
+    .timeline{display:flex;flex-direction:column;gap:0;margin:12px 0;}
+    .tl-item{display:flex;gap:0;position:relative;}
+    .tl-left{width:90px;flex-shrink:0;text-align:right;padding:10px 14px 10px 0;
+              font-size:12px;font-weight:700;color:#028090;white-space:nowrap;}
+    .tl-line{width:2px;background:#E5E7EB;flex-shrink:0;position:relative;
+             -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .tl-dot{width:10px;height:10px;background:#028090;border-radius:50%;
+            position:absolute;left:-4px;top:14px;
+            -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .tl-right{flex:1;padding:8px 0 8px 18px;}
+    .tl-title{font-weight:700;font-size:13px;color:#1E2761;margin-bottom:2px;}
+    .tl-body{font-size:12px;color:#4B5563;}
+    .talking-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0;}
+    .talk-card{border-radius:6px;overflow:hidden;border:1px solid #E5E7EB;}
+    .talk-hdr{padding:9px 12px;font-size:12px;font-weight:700;
+              -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .talk-body{padding:10px 12px;font-size:12px;color:#374151;}
+    .contrast-table{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0;}
+    .contrast-table th{background:#1E2761;color:white;padding:8px 12px;
+                        -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .contrast-table td{padding:8px 12px;border-bottom:1px solid #E5E7EB;vertical-align:top;}
+    .tier-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0;}
+    .tier-card{border:1px solid #E5E7EB;border-radius:6px;padding:12px 14px;}
+    .tier-name{font-size:13px;font-weight:700;color:#1E2761;margin-bottom:4px;}
+    .tier-price{font-size:12px;font-weight:700;color:#028090;margin-bottom:6px;}
+    .tier-desc{font-size:12px;color:#374151;line-height:1.6;}
+    .objection{background:#FFFBEB;border-left:3px solid #F59E0B;padding:10px 14px;
+               margin-bottom:8px;border-radius:0 4px 4px 0;font-size:12px;
+               -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .objection strong{color:#92400E;display:block;margin-bottom:3px;}
+    .footer{text-align:center;font-size:12px;color:#9CA3AF;padding:16px 32px;
+            border-top:1px solid #E5E7EB;}
+  </style>
+</head>
+<body>
+<div class="page">
+
+<div class="header-bar">
+  <div>
+    <div class="brand">Layer8 Tech Group</div>
+    <div class="sub">Due Diligence Assessment &mdash; Internal Demo Guide</div>
+  </div>
+  <div style="font-size:12px;opacity:.8;">Not for distribution</div>
+</div>
+<div class="internal-banner">&#9888;&nbsp; CONFIDENTIAL &mdash; INTERNAL USE ONLY &mdash; NOT FOR CLIENT DISTRIBUTION &nbsp;&#9888;</div>
+
+<div class="content">
+  <h1>DD Demo Guide</h1>
+  <div class="subtitle">How to present the Layer8 DD Assessment in a buyer or broker meeting</div>
+
+  <h2>1. How to Demo the DD Portfolio in a Buyer Meeting</h2>
+  <p>The goal of every buyer meeting is to get the buyer to recognize that they are about to
+  make one of the largest financial decisions of their life without the tools to do it properly.
+  The demo portfolio makes that visible.</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-left">0:00</div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-right">
+        <div class="tl-title">Open with the question</div>
+        <div class="tl-body">&ldquo;Have you seen a deal fall apart after LOI? What happened?&rdquo; Let them answer.
+        Most buyers have a story. That story is your opening.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-left">3:00</div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-right">
+        <div class="tl-title">Show the portfolio index</div>
+        <div class="tl-body">Open index.html. Point to the risk score column. &ldquo;These 12 companies were all
+        assessed as sellers and scored 3.5&ndash;8.2 on exit readiness. Here&rsquo;s what buyers would find.&rdquo;</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-left">6:00</div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-right">
+        <div class="tl-title">Open a contrasting pair</div>
+        <div class="tl-body">Show Meridian (3.3/10, PROCEED) vs. Pinnacle (7.0/10, PROCEED WITH CAUTION).
+        Use the ER demo link at demo.layer8techgroup.com to show the same company from the seller side.
+        The contrast is immediate and visceral.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-left">12:00</div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-right">
+        <div class="tl-title">Walk through one full report</div>
+        <div class="tl-body">Use Garrison (5.3, PROCEED WITH STRUCTURE). It has relatable risk for an SBA buyer
+        &mdash; owner dependency, book portability &mdash; without being so high-risk it feels hypothetical.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-left">20:00</div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-right">
+        <div class="tl-title">Deal structure page</div>
+        <div class="tl-body">Show the deal structure recommendations section. Ask: &ldquo;If you were buying Garrison
+        and we told you there&rsquo;s a 1.7-point gap between what the seller told you and what we found,
+        how much is that worth to you?&rdquo;</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-left">25:00</div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-right">
+        <div class="tl-title">Close on intake</div>
+        <div class="tl-body">Ask: &ldquo;Do you have a deal in diligence right now? Let&rsquo;s run Stage 1 intake
+        before you leave. 15 minutes.&rdquo; Pull up the intake form.</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>2. Key Talking Points by Risk Level</h2>
+  <div class="talking-grid">
+    <div class="talk-card">
+      <div class="talk-hdr" style="background:#ECFDF5;color:#059669;">LOW RISK (1&ndash;3)</div>
+      <div class="talk-body">
+        <p>&ldquo;This is what a clean deal looks like. You still need diligence &mdash; but at this risk level,
+        diligence confirms what you already believe. You&rsquo;re looking for surprises, not disasters.&rdquo;</p>
+        <p><em>Use Meridian as the example.</em></p>
+      </div>
+    </div>
+    <div class="talk-card">
+      <div class="talk-hdr" style="background:#FFFBEB;color:#B45309;">MODERATE (4&ndash;5)</div>
+      <div class="talk-body">
+        <p>&ldquo;This is the most dangerous zone for buyers &mdash; risky enough to hurt you, but not risky enough
+        to make you walk. This is where deals get restructured post-LOI.&rdquo;</p>
+        <p><em>Use Garrison or Peachtree as examples.</em></p>
+      </div>
+    </div>
+    <div class="talk-card">
+      <div class="talk-hdr" style="background:#FFF7ED;color:#EA580C;">HIGH RISK (6&ndash;7)</div>
+      <div class="talk-body">
+        <p>&ldquo;At this level the report is basically your negotiating brief. Every finding is a lever.
+        You need an escrow, an earnout, and a walk condition in your back pocket.&rdquo;</p>
+        <p><em>Use Pinnacle as the example. Pull up the deal structure page.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <h2>3. How to Contrast ER and DD Reports (Same Company, Two Perspectives)</h2>
+  <p>This is the most powerful demo moment. Open both the ER and DD reports for the same company side by side.</p>
+  <table class="contrast-table">
+    <thead><tr>
+      <th>What the Seller Sees (ER)</th>
+      <th>What the Buyer Finds (DD)</th>
+      <th>The Gap</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Garrison ER: 4.3/10 NEEDS WORK<br><small>Owner says: &ldquo;We&rsquo;re 43% ready&rdquo;</small></td>
+          <td>Garrison DD: 5.3/10 MODERATE<br><small>Buyer finds: actual risk is higher than seller admits</small></td>
+          <td style="font-weight:700;color:#B45309;">1.0 point gap &mdash; buyer pays more than they should</td></tr>
+      <tr style="background:#FAFAFA;"><td>Pinnacle ER: 3.5/10 NEEDS WORK<br><small>Owner says: &ldquo;We need work&rdquo;</small></td>
+          <td>Pinnacle DD: 7.0/10 HIGH RISK<br><small>Buyer finds: material gaps across all domains</small></td>
+          <td style="font-weight:700;color:#DC2626;">3.5 point gap &mdash; seller understated risk significantly</td></tr>
+      <tr><td>Meridian ER: 8.2/10 MARKET READY<br><small>Owner says: &ldquo;We&rsquo;re ready to go&rdquo;</small></td>
+          <td>Meridian DD: 3.3/10 LOW RISK<br><small>Buyer finds: confirms quality with nuances</small></td>
+          <td style="font-weight:700;color:#059669;">Broadly aligned &mdash; rare and reassuring</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Key line:</strong> &ldquo;The ER score tells you how ready the seller thinks they are.
+  The DD score tells you what a buyer would actually find. The gap between those two numbers
+  is where deals fall apart &mdash; or where money gets left on the table.&rdquo;</p>
+
+  <h2>4. Positioning the Three Delivery Tiers</h2>
+  <div class="tier-grid">
+    <div class="tier-card">
+      <div class="tier-name">&#9675;&nbsp; Self-Serve / Voice Intake</div>
+      <div class="tier-price">Free &rarr; Stage 2 data guide</div>
+      <div class="tier-desc">Best for: buyers who want to start immediately. 15-minute intake, Stage 2 data
+      gathering guide delivered within 24 hours. No commitment. Use this to qualify
+      &ldquo;is this even worth diligencing?&rdquo;</div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-name">&#9679;&nbsp; Layer8 Managed</div>
+      <div class="tier-price">$3,500&ndash;$9,500 depending on scope</div>
+      <div class="tier-desc">Best for: buyers who want an expert team to do the work. Full Stage 3 report
+      with document scoring, deal structure recommendations, and integration playbook.
+      Layer8 executes or advises on integration workstreams.</div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-name">&#9632;&nbsp; White-Label (Broker)</div>
+      <div class="tier-price">Volume pricing available</div>
+      <div class="tier-desc">Best for: M&amp;A brokers who want to offer DD assessment as a value-add service
+      to buyers they work with. Branded to the broker or co-branded with Layer8.
+      Contact info@layer8techgroup.com for broker program details.</div>
+    </div>
+  </div>
+
+  <h2>5. Handling Pricing Questions</h2>
+
+  <div class="objection">
+    <strong>&ldquo;How much does it cost?&rdquo;</strong>
+    &ldquo;The Stage 1 intake and Stage 2 data guide are free. If you want Layer8 to execute the full
+    Stage 3 assessment, that starts at $3,500 for a straightforward deal. For context: what does
+    your attorney charge per hour? A full DD assessment is typically a fraction of what you&rsquo;d
+    spend on legal, and it tells your attorney exactly where to look.&rdquo;
+  </div>
+
+  <div class="objection">
+    <strong>&ldquo;Can&rsquo;t I just do this myself?&rdquo;</strong>
+    &ldquo;Absolutely. Here&rsquo;s what Stage 2 gives you for free &mdash; a complete document checklist and
+    question bank specific to your target company and buyer type. Most buyers use that and then
+    come back when they find something unexpected. That&rsquo;s fine.&rdquo;
+  </div>
+
+  <div class="objection">
+    <strong>&ldquo;Is this the same as a QofE?&rdquo;</strong>
+    &ldquo;No. A QofE is financial only. We cover eight domains including operational, legal, technology,
+    customer, and management risk. We also tell you what deal structure to use based on what we find,
+    and give you a 180-day integration plan. The QofE firm gives you an adjusted EBITDA.
+    We give you a playbook.&rdquo;
+  </div>
+
+  <div class="objection">
+    <strong>&ldquo;The seller already gave me a clean CIM.&rdquo;</strong>
+    &ldquo;The CIM is a marketing document. It was written to make you buy. Our report is written
+    from the other direction &mdash; to tell you what the CIM doesn&rsquo;t. Open Pinnacle&rsquo;s report and
+    count how many red flags the CIM would never mention.&rdquo;
+  </div>
+
+</div>
+<div class="footer">Layer8 Tech Group &nbsp;&middot;&nbsp; Confidential &mdash; Internal Use Only</div>
+</div>
+</body>
+</html>
